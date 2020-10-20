@@ -1,0 +1,102 @@
+$ heroku logs
+2020-10-20T01:43:45.442151+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=f2b1e659-bce3-4812-af44-a38294888434 fwd="177.81.138.220" dyno= connect= service= status=502 bytes= protocol=https
+2020-10-20T01:44:41.000000+00:00 app[api]: Build started by user lucas.resende@grupotalentos.com.br
+2020-10-20T01:45:07.181509+00:00 app[api]: Deploy 28f1b8ad by user lucas.resende@grupotalentos.com.br
+2020-10-20T01:45:07.181509+00:00 app[api]: Release v3 created by user lucas.resende@grupotalentos.com.br
+2020-10-20T01:45:07.193958+00:00 app[api]: Scaled to web@1:Free by user lucas.resende@grupotalentos.com.br
+2020-10-20T01:45:10.151194+00:00 heroku[web.1]: Starting process with command `python primos.py`
+2020-10-20T01:45:11.875627+00:00 app[web.1]: File "primos.py", line 23
+2020-10-20T01:45:11.875647+00:00 app[web.1]: print "N├║meros primos: ", e
+2020-10-20T01:45:11.875695+00:00 app[web.1]: ^
+2020-10-20T01:45:11.875712+00:00 app[web.1]: SyntaxError: Missing parentheses in call to 'print'. Did you mean print("N├║meros primos: ", e)?
+2020-10-20T01:45:11.927548+00:00 heroku[web.1]: Process exited with status 1
+2020-10-20T01:45:11.974678+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-20T01:45:11.976937+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-20T01:45:15.936427+00:00 heroku[web.1]: Starting process with command `python primos.py`
+2020-10-20T01:45:17.000000+00:00 app[api]: Build succeeded
+2020-10-20T01:45:18.485689+00:00 app[web.1]: File "primos.py", line 23
+2020-10-20T01:45:18.485845+00:00 app[web.1]: print "N├║meros primos: ", e
+2020-10-20T01:45:18.485846+00:00 app[web.1]: ^
+2020-10-20T01:45:18.497576+00:00 app[web.1]: SyntaxError: Missing parentheses in call to 'print'. Did you mean print("N├║meros primos: ", e)?
+2020-10-20T01:45:18.556141+00:00 heroku[web.1]: Process exited with status 1
+2020-10-20T01:45:18.599810+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-20T01:45:20.039720+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=5d1d5019-3c72-49fb-97f5-70e0b520bd97 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T01:45:20.485027+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=fdfa507a-0288-4fd1-961b-003fca5ac3ea fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T01:45:27.899716+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=51025bf5-276a-4c8f-b632-7c35d3e7030b fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T01:45:28.210336+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=340f9339-2ba5-4719-9daa-4d1cee080db5 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T01:45:30.877141+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=924710c3-0b02-4590-beb3-1a9dd36d8d28 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T01:45:31.123505+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=857620f1-eaf1-4077-a32c-050951bb62cc fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T01:46:33.093502+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=c07394d9-c71e-4a8f-b7b0-f3f3a58d4f6f fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T01:46:33.423830+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=b0f55d77-ca26-4073-a317-3c1a31ca23de fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T02:03:38.017100+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=54c16099-f649-41fa-b404-7141cffbc1d5 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T02:03:38.318897+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=17a0b4e6-7b72-4c7e-b7c0-5c217b6855ce fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T02:12:35.673551+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=f7ee6586-a3a0-4e4a-b405-4b0945d90b9d fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T02:12:35.893182+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=3047fe5f-fba3-4496-a3f0-af1be2e7a1c7 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T02:19:04.267238+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-20T02:19:08.205609+00:00 heroku[web.1]: Starting process with command `python primos.py`
+2020-10-20T02:19:10.714284+00:00 app[web.1]: File "primos.py", line 23
+2020-10-20T02:19:10.714305+00:00 app[web.1]: print "N├║meros primos: ", e
+2020-10-20T02:19:10.714305+00:00 app[web.1]: ^
+2020-10-20T02:19:10.714315+00:00 app[web.1]: SyntaxError: Missing parentheses in call to 'print'. Did you mean print("N├║meros primos: ", e)?
+2020-10-20T02:19:10.786831+00:00 heroku[web.1]: Process exited with status 1
+2020-10-20T02:19:10.832320+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-20T03:09:18.312627+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-20T03:09:22.391153+00:00 heroku[web.1]: Starting process with command `python primos.py`
+2020-10-20T03:09:24.678247+00:00 app[web.1]: File "primos.py", line 23
+2020-10-20T03:09:24.678263+00:00 app[web.1]: print "N├║meros primos: ", e
+2020-10-20T03:09:24.678590+00:00 app[web.1]: ^
+2020-10-20T03:09:24.678592+00:00 app[web.1]: SyntaxError: Missing parentheses in call to 'print'. Did you mean print("N├║meros primos: ", e)?
+2020-10-20T03:09:24.732040+00:00 heroku[web.1]: Process exited with status 1
+2020-10-20T03:09:24.796774+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-20T03:22:07.000000+00:00 app[api]: Build started by user lucas.resende@grupotalentos.com.br
+2020-10-20T03:22:31.762797+00:00 app[api]: Release v4 created by user lucas.resende@grupotalentos.com.br
+2020-10-20T03:22:31.762797+00:00 app[api]: Deploy 99dac4c6 by user lucas.resende@grupotalentos.com.br
+2020-10-20T03:22:33.366333+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-20T03:22:36.273511+00:00 heroku[web.1]: Starting process with command `python primos.py`
+2020-10-20T03:22:38.287350+00:00 app[web.1]: File "primos.py", line 29
+2020-10-20T03:22:38.287375+00:00 app[web.1]: numero+=1
+2020-10-20T03:22:38.287375+00:00 app[web.1]: ^
+2020-10-20T03:22:38.287375+00:00 app[web.1]: IndentationError: unindent does not match any outer indentation level
+2020-10-20T03:22:38.332780+00:00 heroku[web.1]: Process exited with status 1
+2020-10-20T03:22:38.375778+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-20T03:22:38.378631+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-20T03:22:40.000000+00:00 app[api]: Build succeeded
+2020-10-20T03:22:41.622465+00:00 heroku[web.1]: Starting process with command `python primos.py`
+2020-10-20T03:22:43.912826+00:00 app[web.1]: File "primos.py", line 29
+2020-10-20T03:22:43.912856+00:00 app[web.1]: numero+=1
+2020-10-20T03:22:43.912857+00:00 app[web.1]: ^
+2020-10-20T03:22:43.912891+00:00 app[web.1]: IndentationError: unindent does not match any outer indentation level
+2020-10-20T03:22:43.983553+00:00 heroku[web.1]: Process exited with status 1
+2020-10-20T03:22:44.023131+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-20T03:22:46.362995+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=8380374d-b12e-4720-94ac-0649294b1c88 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T03:22:46.774189+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=bf92a728-86a5-4382-b2e9-4ac2fec9b709 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T03:25:42.443205+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=9bb5bdb7-5b6e-485b-8afa-9d08d9c07a84 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T03:25:42.648688+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=2beadb1b-4e18-4229-9853-ff91207f1bc3 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T03:26:15.433579+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=5aa7afef-c7d8-424e-bc01-17ccc26b42f2 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T03:26:15.716806+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=b61cb2a4-4f60-48f1-8b99-04fe83c74d2a fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T03:27:03.234542+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=acc3off.herokuapp.com request_id=6d7b728b-539b-47d1-94cf-a22e17fd777b fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T03:27:03.453795+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=747b48ca-4283-4f09-bab6-8c1f6109d585 fwd="177.81.138.220" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-20T03:32:34.000000+00:00 app[api]: Build started by user lucas.resende@grupotalentos.com.br
+2020-10-20T03:32:56.850182+00:00 app[api]: Deploy 6194608d by user lucas.resende@grupotalentos.com.br
+2020-10-20T03:32:56.850182+00:00 app[api]: Release v5 created by user lucas.resende@grupotalentos.com.br
+2020-10-20T03:32:57.279189+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-20T03:33:00.139525+00:00 heroku[web.1]: Starting process with command `python t8.py`
+2020-10-20T03:33:02.393497+00:00 app[web.1]: * Serving Flask app "t8" (lazy loading)
+2020-10-20T03:33:02.393519+00:00 app[web.1]: * Environment: production
+2020-10-20T03:33:02.393574+00:00 app[web.1]: WARNING: Do not use the development server in a production environment.
+2020-10-20T03:33:02.393620+00:00 app[web.1]: Use a production WSGI server instead.
+2020-10-20T03:33:02.393649+00:00 app[web.1]: * Debug mode: off
+2020-10-20T03:33:02.415143+00:00 app[web.1]: * Running on http://0.0.0.0:7142/ (Press CTRL+C to quit)
+2020-10-20T03:33:02.477111+00:00 heroku[web.1]: State changed from starting to up
+2020-10-20T03:33:05.000000+00:00 app[api]: Build succeeded
+2020-10-20T03:33:16.372567+00:00 app[web.1]: 10.109.140.73 - - [20/Oct/2020 03:33:16] "GET / HTTP/1.1" 200 -
+2020-10-20T03:33:16.372802+00:00 heroku[router]: at=info method=GET path="/" host=acc3off.herokuapp.com request_id=428955ed-00b8-4878-a268-923a5cc9892b fwd="177.81.138.220" dyno=web.1 connect=0ms service=7ms status=200 bytes=566 protocol=https
+2020-10-20T03:33:16.633934+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=a81131fe-17e1-46fd-b8a0-0f82aed11cf9 fwd="177.81.138.220" dyno=web.1 connect=0ms service=29ms status=404 bytes=379 protocol=https
+2020-10-20T03:33:16.634042+00:00 app[web.1]: 10.109.140.73 - - [20/Oct/2020 03:33:16] "GET /favicon.ico HTTP/1.1" 404 -
+2020-10-20T03:33:38.661119+00:00 app[web.1]: 10.69.234.207 - - [20/Oct/2020 03:33:38] "GET / HTTP/1.1" 200 -
+2020-10-20T03:33:38.661641+00:00 heroku[router]: at=info method=GET path="/" host=acc3off.herokuapp.com request_id=cc5d47b0-c88f-45ea-b9d7-639a50e4ec66 fwd="177.81.138.220" dyno=web.1 connect=1ms service=6ms status=200 bytes=566 protocol=https
+2020-10-20T03:33:39.996458+00:00 app[web.1]: 10.102.224.122 - - [20/Oct/2020 03:33:39] "GET / HTTP/1.1" 200 -
+2020-10-20T03:33:39.996821+00:00 heroku[router]: at=info method=GET path="/" host=acc3off.herokuapp.com request_id=9c470133-1c9f-43ac-a92c-e928e848e788 fwd="131.0.60.252" dyno=web.1 connect=1ms service=7ms status=200 bytes=566 protocol=https
+2020-10-20T03:33:40.203798+00:00 app[web.1]: 10.102.224.122 - - [20/Oct/2020 03:33:40] "GET /favicon.ico HTTP/1.1" 404 -
+2020-10-20T03:33:40.204256+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=acc3off.herokuapp.com request_id=83d933b9-f2c3-45cf-8e4b-20133d44c378 fwd="131.0.60.252" dyno=web.1 connect=1ms service=3ms status=404 bytes=379 protocol=https
+
