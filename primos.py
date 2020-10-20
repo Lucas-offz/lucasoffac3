@@ -1,21 +1,31 @@
-#!/usr/bin/env python
-#-*- coding: utf8-*-
-not_p = []
-e = []
-lim = 100
+import os
+from flask import Flask, jsonify, request
+from math import sqrt
 
-def primo(num):
-   if num != 1:
-         t = True
-         for i in range(2,num):
-             if num % i == 0:
-                 t = False
-                 break
-         return t
- 
-for num in range(2, lim + 1):
-   test = primo(num)
-   if (test):
-       e.append(num)
-   else:
-       not_p.append(num)
+app = Flask(__name__)
+
+@app.route('/')
+def nao_entre_em_panico():
+    
+    limite = 100
+    
+    c = 1
+    p = 1
+    numero = 3
+   
+    primos = "2,"
+    
+    while p < limite:
+        ehprimo = 1
+        for i in range(2, numero):
+            if numero % i == 0:
+                ehprimo = 0 
+                break
+        if (ehprimo):
+           primos = primos + str(numero) + "."
+           p += 1
+           if(p % 10 == 0):
+               primos = primos + "<br>"
+       numero+=1
+   
+    return primos
