@@ -19,6 +19,3 @@ for num in range(2, lim + 1):
        e.append(num)
    else:
        not_p.append(num)
-
-print "Números primos: ", e
-print "Não são primos: ", not_p
